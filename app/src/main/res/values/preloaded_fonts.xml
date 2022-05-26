@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alata</item>
+        <item>@font/arapey</item>
+        <item>@font/boogaloo</item>
+        <item>@font/bowlby_one</item>
+        <item>@font/princess_sofia</item>
+    </array>
+</resources>

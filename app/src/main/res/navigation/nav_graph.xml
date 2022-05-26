@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/noteListFragment2">
+    <fragment
+        android:id="@+id/noteListFragment2"
+        android:name="com.rumeysaozer.roomnotebook.view.NoteListFragment"
+        android:label="fragment_note_list"
+        tools:layout="@layout/fragment_note_list" >
+        <action
+            android:id="@+id/action_noteListFragment2_to_noteAddFragment2"
+            app:destination="@id/noteAddFragment2" />
+        <action
+            android:id="@+id/action_noteListFragment2_to_noteUpdateFragment"
+            app:destination="@id/noteUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteAddFragment2"
+        android:name="com.rumeysaozer.roomnotebook.view.NoteAddFragment"
+        android:label="fragment_note_add"
+        tools:layout="@layout/fragment_note_add" >
+        <action
+            android:id="@+id/action_noteAddFragment2_to_noteListFragment2"
+            app:destination="@id/noteListFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteUpdateFragment"
+        android:name="com.rumeysaozer.roomnotebook.view.NoteUpdateFragment"
+        android:label="fragment_note_update"
+        tools:layout="@layout/fragment_note_update" >
+        <action
+            android:id="@+id/action_noteUpdateFragment_to_noteListFragment2"
+            app:destination="@id/noteListFragment2" />
+        <argument
+            android:name="note"
+            app:argType="com.rumeysaozer.roomnotebook.model.Note" />
+    </fragment>
+</navigation>
